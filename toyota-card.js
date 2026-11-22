@@ -9,7 +9,7 @@
 //         units: metric | imperial   (optional; defaults to imperial for backwards compatibility)
 //         image: <URL or local path to a car photo>   (optional; falls back to integration entity_picture)
 
-const VERSION = "1.2.1";
+const VERSION = "1.2.2";
 const KM_MI = 0.621371, L100_MPG = 282.481;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const num = v => (v === undefined || v === null || v === "" || isNaN(+v)) ? null : +v;
